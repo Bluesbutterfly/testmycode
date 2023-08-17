@@ -2,7 +2,7 @@ import torchvision.transforms as transforms
 from torchvision.datasets import ImageFolder
 
 # 数据集路径
-data_dir = "models/loadimg/dataset"
+data_dir = "models/loadimg"
 
 
 # 数据预处理
