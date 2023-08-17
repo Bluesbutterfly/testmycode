@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  {{ name|lower }}
+  {{dic['key2']}}
+  {{'<h1>h1字符串</h1>'|safe}}
+  {% if name == 'zhangsan' %}
+  你好张三
+  {% else %}
+  你不是张三
+  {% endif %}
+
+  {% for (temp,value) in dic.items() %}
+  <h5>{{ temp }}:{{ value }}</h5>
+  {% endfor %}
+</body>
+</html>
