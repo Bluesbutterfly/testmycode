@@ -56,7 +56,12 @@ for epoch in range(num_epochs):
         #     augmented_images.append(augmented_image)
         
         # augmented_images = torch.stack(augmented_images)
-        
+        # 数据平衡
+        # weights = [0.5, 0.5, 1.0]
+        # weights = torch.FloatTensor(weights)
+        # sampler = WeightedRandomSampler(weights, len(weights))
+        # 数据加载器
+        # train_loader = DataLoader(train_dataset, sampler=sampler, shuffle=False)
         # 将数据输入模型进行前向传播
         outputs = model(images)
         # 计算损失
