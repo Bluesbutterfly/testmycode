@@ -26,3 +26,6 @@
 # cursor.close()
 # db.close()
 SECRET_KEY = '1315as4dvf45das8eq5as3215z5asq'
+nums= [0,0,1,1,1,2,2,3,3,4]
+
+
